@@ -461,7 +461,48 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-size: 20px;
   padding: 10px;
   -webkit-border-radius: var(--border-radius-md);
-          border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-md);
+  -webkit-transition: var(--transition-timing);
+  -o-transition: var(--transition-timing);
+  transition: var(--transition-timing);
+  margin-top: 50%;
+}
+.menu-social-container .social-link:hover {
+  background: var(--salmon-pink);
+  color: var(--white);
+}
+
+.menu-user-actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.menu-user-actions .action-btn {
+  position: relative;
+  font-size: 35px;
+  color: var(--onyx);
+  padding: 5px;
+}
+
+.menu-user-actions .count {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background: var(--bittersweet);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
 }
 
 
